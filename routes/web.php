@@ -187,6 +187,8 @@ Route::post('/note_emr', 'App\Http\Controllers\EmrController@note')->name('emr_n
 Route::get('/file-upload', [FileUploadController::class, 'index']);
 Route::post('/file-upload', [FileUploadController::class, 'upload']);
 
+//Route::post('/file-upload', [FileUploadController::class, 'upload']);
+
 
 
 
