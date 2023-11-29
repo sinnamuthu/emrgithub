@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{background: white;font-family: "Poppins", sans-serif;letter-spacing: 1px;font-weight:500}
+.text-red{color: red !important}
+.text-green{color: green !important}
+.text-orange{color: orange !important}
+.text-blue{color: blue !important}
+
+  /* buttons */
+.btn-red{background: red;color: white;font-size: xx-small}
+.btn-red:hover, .btn-red:focus{background: #d60000;color: white}
+.btn-grayblue{background: #acb6c4;color: white;font-size: xx-small}
+.btn-grayblue:hover, .btn-grayblue:focus{background: #97a4b5;color: white}
+
+.main ::-webkit-scrollbar {width: 5px;}
+.main ::-webkit-scrollbar-track {border-radius: 10px;}
+.main ::-webkit-scrollbar-thumb {background: #5d7090;border-radius: 10px;}
+.main ::-webkit-scrollbar-thumb:hover {background: #495871;}
+
+/* Left Menu */
+.left{width: 55px;height: 100%;overflow-x: hidden;overflow-y: inherit;z-index: 1;position: fixed;transition: all 0.5s;border:1px solid #C7C7C7;margin-top:93px}
+.left:hover{width: 230px}
+.left:hover ul li.menu-heading{opacity: 1;text-align: center}
+.left ul{padding-left: 0}
+.left ul li{list-style-type: none;padding:10px}
+.left ul li a{display: flex;align-items: center;color: #464E5F;padding: 8px 10px 8px 0;font-size: 16px;width: 230px;}
+.left ul li a .ic{min-width:50px;padding-right: 15px;transition: all 1s;}
+.left ul li a:hover {background: #013197;text-decoration: none;color:#fff;border-radius:6px}
+.left ul li a:hover i.fa {color: #464E5F;} 
+.left ul li a:focus {text-decoration: none;}
+.left ul li a i.fa{width: 50px;text-align: center;padding-right: 15px;transition: all 1s}
+.left ul .menu-heading{opacity: 0;padding: 10px 5px 10px 10px;color: #ffff04;font-size: larger;border-bottom: 1px solid rgb(9, 179, 236);transition: all 0.5s;}
+#submenu1 li, #submenu2 li, #submenu3 li{margin-left: 15px;}
+ 
+  /* Right Content */
+.right {transition: all 0.5s;margin-left: 55px;}
+.right .bg-default {border-bottom: 1px solid #C7C7C7}
+
+/*-------- Navigation --------*/
+.navbar-nav i.fa{color: #464E5F;}
+#mainNav .navbar-collapse {overflow: auto;max-height: 75vh;}
+#mainNav .navbar-collapse .navbar-nav .nav-item .nav-link {cursor: pointer;color: #464E5F;}
+#mainNav .navbar-collapse .navbar-sidenav .nav-link-collapse:after {float: right;content: '\f107';font-family: 'FontAwesome';}
+#mainNav .navbar-collapse .navbar-sidenav .nav-link-collapse.collapsed:after {content: '\f105';}
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level,
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level {padding-left: 0;}
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a,
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a {display: block;padding: 0.5em 0;}
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:focus, #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:hover,
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a:focus,
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a:hover {text-decoration: none;}
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a {padding-left: 1em;}
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a {padding-left: 2em;}
+#mainNav .navbar-collapse .sidenav-toggler {display: none;}
+#mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link {position: relative;min-width: 45px;}
+#mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link:after {float: right;width: auto;content: '\f105';border: none;font-family: 'FontAwesome';}
+#mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link .indicator {position: absolute;top: 5px;left: 21px;font-size: 10px;}
+#mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown.show > .nav-link:after {content: '\f107';}
+#mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link:after{color: #464E5F;}
+#mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown .dropdown-menu > .dropdown-item > .dropdown-message {overflow: hidden;max-width: none;text-overflow: ellipsis;}
+#mainNav.fixed-top .sidenav-toggler {display: none;}
+#mainNav.fixed-top.navbar-dark .sidenav-toggler{background-color: #212529;border-top: 1px solid #343a40}
+#mainNav.fixed-top.navbar-dark .sidenav-toggler a i{color: #adb5bd}
+#mainNav.fixed-top.navbar-light .sidenav-toggler{background-color: #dee2e6}
+#mainNav.fixed-top.navbar-light .sidenav-toggler a i{color: rgba(0, 0, 0, 0.5)}
+
+/*------------- Cards --------*/
+.card.dashboard {border: none;}
+.card.dashboard h5 {color: #fff !important;}
+.card-body-icon {position: absolute;z-index: 0;top: 10px;right: 10px;font-size: 32px;font-size: 2rem;opacity: 0.3;}
+
+.modal-dialog.sch-apt{max-width:660px}
+.modal-dialog.sch-apt .modal-content{background-color:#FEFEFE}
+.modal-dialog.sch-apt .modal-body{padding:15px 45px}
+.modal-dialog.sch-apt .modal-title{width:100%;text-align:center;color:#214BA4;font-size:18px}
+.modal-dialog.sch-apt .modal-footer{background-color:#F1F1F1}
+.modal-dialog.sch-apt .form-label{color:#353F59CC;font-size:13px}
+.btn-secondary.cancel{background: #DCDCDC;color: #1C1B1F;border:0}
+.btn-primary.save{background: #214BA4;color:#fff;padding:5px 10px}
+
+/* flèches menu gauche*/
+#fa1{margin-left: 52px !important;}
+#fa2{  margin-left: 32px !important;}
+#fa3{margin-left: 40px !important;}
+.right #overview .content {padding: 100px 30px 15px 30px;}
+.left:hover + .right {margin-left: 17%;}
+.strike {color: #999;}
+hr {border-top: 1px solid #e6e6e6;margin: 10px 0;}
+.py-15 {padding: 15px 0;}
+
+ .fc-dayGrid-view .fc-body .fc-row{min-height:150px !important}
+ /*.fc .fc-row .fc-content-skeleton td{display: block;cursor: pointer;height: 100vh;width: 100%;}*/
+
+.fc-button-primary{border:1px solid #C7C7C7 !important;color:#464E5F !important;background-color:transparent !important}
+#calendar-container .fc-button-group > .fc-button{margin:0 10px}
+#calendar-container .fc-button-group > .fc-listWeek-button{display:none}
+.fc-row .fc-content-skeleton td, .fc-row .fc-mirror-skeleton td{text-align:center;padding-top:15px}
+.fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number{float:none !important;font-size:20px;}
+.fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-content, .fc-unthemed .fc-popover, .fc-unthemed .fc-list-view, .fc-unthemed .fc-list-heading td{border-color:#C7C7C7 !important}
+
+.fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number{color:#464E5F}
+
+.fc-event, .fc-event-dot {background-color:#B6D7A8 !important;border:0 !important}
+.fc-event .fc-content{color:#353F59 !important}
+
+.tab_content {width:100% }
+.tabs{padding-left:0;}
+.tabs li {display:inline;list-style:none;border-bottom:1px solid  #C8D0E0;padding-bottom:6px;padding-right:25px}
+.tabs a {color:#000;display:inline-block;font-size:20px;text-decoration:none}
+.tabs a.active { color:#000;border-bottom:5px solid #2A8CFF }
+.tab_content .tabs li {padding:0 10px;display:inline-block;border:0}
+.tab_content .tabs li a{width:115px;height:95px;padding:10px;border:1px solid #CCCCCC;border-radius:10px;position:relative;background-color:transparent !important;background-position:center 10px;background-repeat:no-repeat;display:flex;justify-content:center}
+.tab_content .tabs li a.active{border:1px solid #2A8CFF;background-color:#2A8CFF !important;}
+.tab_content .tabs li a.active span{color:#fff}
+.tab_content .tabs li a span{text-align:center;color:#5C617B;font-size:15px;line-height:18px;position:absolute;bottom:5px;}
+.tab_content .tabs li a.patient{background-image:url('/assets/img/customimage/ic-patient-info2.png')}
+.tab_content .tabs li a.patient.active{background-image:url('/assets/img/customimage/ic-patient-info.png')}
+.tab_content .tabs li a.medical{background-image:url('/assets/img/customimage/ic-medical-info.png')}
+.tab_content .tabs li a.medical.active{background-image:url('/assets/img/customimage/ic-medical-info-o.png')}
+.tab_content .tabs li a.exam{background-image:url('/assets/img/customimage/ic-examination.png')}
+.tab_content .tabs li a.exam.active{background-image:url('/assets/img/customimage/ic-examination-o.png')}
+.tab_content .tabs li a.observation{background-image:url('/assets/img/customimage/ic-observation.png')}
+.tab_content .tabs li a.observation.active{background-image:url('/assets/img/customimage/ic-observation-o.png')}
+.tab_content .tabs li a.treatment{background-image:url('/assets/img/customimage/ic-treatment.png')}
+.tab_content .tabs li a.treatment.active{background-image:url('/assets/img/customimage/ic-treatment-o.png')}
+.tab_content .tabs li a.prescriptions{background-image:url('/assets/img/customimage/ic-prescriptions.png')}
+.tab_content .tabs li a.prescriptions.active{background-image:url('/assets/img/customimage/ic-prescriptions-o.png')}
+.tab_content .tabs li a.clinical{background-image:url('/assets/img/customimage/ic-clinical-notes.png')}
+.tab_content .tabs li a.clinical.active{background-image:url('/assets/img/customimage/ic-clinical-notes-o.png')}
+.tab_content .tabs li a.lab{background-image:url('/assets/img/customimage/ic-lab-works.png')}
+.tab_content .tabs li a.lab.active{background-image:url('/assets/img/customimage/ic-lab-works-o.png')}
+.tab_content .tabs li a.uploads{background-image:url('/assets/img/customimage/ic-uploads.png')}
+.tab_content .tabs li a.uploads.active{background-image:url('/assets/img/customimage/ic-uploads-o.png')}
+
+.tab_content {padding:40px 20px}
+.tab_content .patient, .tab_content .medical{background-color:#fff;padding:20px 120px;box-shadow: 0px 0px 35px 0px rgba(181, 181, 195, 0.1);}
+.tab_content .form-wrap{ margin-bottom:35px}
+
+.tab_content h3{font-size:26px;font-weight:500;margin-bottom:30px;text-align:center}
+.tab_content h4{font-size:18px;font-weight:500;margin-bottom:30px}
+
+.tab_content hr{border-top:1px solid #A3A7AF;margin-top:30px;margin-bottom:30px}
+
+.tab_content .patient button.next{background:url('/assets/img/customimage/arrow-next.png') no-repeat right center; color:#2C9AFF;font-size:16px;padding-right:15px;text-decoration:none}
+.tab_content button.next{background:url('/assets/img/customimage/arrow-next.png') no-repeat right center; color:#2C9AFF;font-size:16px;padding-right:15px;text-decoration:none}
+.tab_content button.back{background:url('/assets/img/customimage/arrow-back.png') no-repeat left center; color:#2C9AFF;font-size:16px;padding-left:25px;text-decoration:none}
+.tab_content .patient p {font-size:18px;font-weight:300;line-height:40px;margin-bottom:0;}
+.tab_content .patient p span{font-weight:400;}
+.tab_content .patient h3{font-size:26px;font-weight:500;margin-bottom:30px;text-align:center}
+.tab_content .patient h4{font-size:18px;font-weight:500;margin-bottom:30px}
+.form-label.small{color:#353F59;font-size:15px;line-height:40px}
+input.form-control.ic{background-repeat: no-repeat;background-position:10px center;padding-left:40px}
+input.form-control.ic.contact{background-image:url('/assets/img/customimage/ic-phone.png');}
+input.form-control.ic.mail{background-image:url('/assets/img/customimage/ic-mail.png');}
+
+.form-switch.add{margin-bottom:30px;padding-left:0;display:flex;}
+.form-switch.add label{font-size:18px;font-weight:500;padding-right:15px}
+.form-check.add .form-check-input{float:none;margin-left:0}
+
+.form-switch.med .form-check-input{width:2.5em;margin-left:-50px}
+.form-switch.med{margin-bottom:30px;padding-left:50px}
+.form-switch.med label{font-size:16px;font-weight:400;color:#000}
+
+.lab-adj-tp{padding-top:55px}
+.tab_content .medical h3{color:#464E5F;margin-bottom:50px;margin-top:15px}
+
+.tret-lab-work{padding:30px 40px;border-radius:20px;border:1px solid green}
+.tret-lab-work .form-select{border-radius:0;border:1px solid #000;border-width:0 0 1px}
+.tret-lab-work .form-wrap{ margin-bottom:35px}
+.tooth-bx{border:1px solid #000}
+.tooth-bx .tooth-bx-inner{padding:10px 0}
+.tooth-bx.decid .tooth-bx-inner{padding:10px;width:70%;margin:0 auto}
+.tret-lab-work .input-group.date .input-group-text{background-color:transparent;border:1px solid #000;border-width:0 0 1px !important;border-radius:0 !important}
+.tret-lab-work .form-control{background-color:transparent;border:1px solid #000;border-width:0 0 1px !important;border-radius:0 !important}
+
+.md-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 2px;
+    outline: none;
+    border: 0;
+    padding: 0 3px 10px;
+    background: transparent;
+}
+
+.md-icon {
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    vertical-align: middle;
+	height:95px;
+}
+.md-button.btm {padding-bottom:0;padding-top:10px}
+.md-button.btm .md-icon{background-position: center top;}
+.md-button p{margin-bottom:0}
+.tooth-bx-inner2{ justify-content: space-between;display:flex}
+.brd-btm-rt{border-bottom:1px solid #333333;position:relative;}
+.brd-btm-rt:after{position:absolute;content:'';right:0;top:20%;height:80%;width:1px; background-color:#333333}
+.brd-btm{border-bottom:1px solid #333333;}
+.brd-rt{position:relative;}
+.brd-rt:after{position:absolute;content:'';right:0;top:0;height:80%;width:1px; background-color:#333333}
+
+.teeth-18{width:52px;background-image:url('/assets/img/customimage/teeth/18.png');background-size:52px auto}
+.teeth-18.teeth-on,.teeth-18.teeth-up,.teeth-18:hover {background-image:url('/assets/img/customimage/teeth/18-o.png');}
+.teeth-17{width:46px;background-image:url('/assets/img/customimage//teeth/17.png');background-size:46px auto}
+.teeth-17.teeth-on,.teeth-17.teeth-up,.teeth-17:hover {background-image:url('/assets/img/customimage/teeth/17-o.png');}
+.teeth-16{width:42px;background-image:url('/assets/img/customimage/teeth/16.png');background-size:42px auto}
+.teeth-16.teeth-on,.teeth-16.teeth-up,.teeth-16:hover {background-image:url('/assets/img/customimage/teeth/16-o.png');}
+.teeth-15{width:34px;background-image:url('/assets/img/customimage/teeth/15.png');background-size:34px auto}
+.teeth-15.teeth-on,.teeth-15.teeth-up,.teeth-15:hover  {background-image:url('/assets/img/customimage/teeth/15-o.png');}
+.teeth-14{width:35px;background-image:url('/assets/img/customimage/teeth/14.png');background-size:35px auto}
+.teeth-14.teeth-on,.teeth-14.teeth-up,.teeth-14:hover {background-image:url('/assets/img/customimage/teeth/14-o.png');}
+.teeth-13{width:29px;background-image:url('/assets/img/customimage/teeth/13.png');background-size:29px auto}
+.teeth-13.teeth-on,.teeth-13.teeth-up,.teeth-13:hover {background-image:url('/assets/img/customimage/teeth/13-o.png');}
+.teeth-12{width:27px;background-image:url('/assets/img/customimage/teeth/12.png');background-size:27px auto}
+.teeth-12.teeth-on,.teeth-12.teeth-up,.teeth-12:hover {background-image:url('/assets/img/customimage/teeth/12-o.png');}
+.teeth-11{width:27px;background-image:url('/assets/img/customimage/teeth/11.png');background-size:27px auto}
+.teeth-11.teeth-on,.teeth-11.teeth-up,.teeth-11:hover {background-image:url('/assets/img/customimage/teeth/11-o.png');}
+
+.teeth-21{width:27px;background-image:url('/assets/img/customimage/teeth/21.png');background-size:27px auto}
+.teeth-21.teeth-on,.teeth-21.teeth-up,.teeth-21:hover {background-image:url('/assets/img/customimage/teeth/21-o.png');}
+.teeth-22{width:27px;background-image:url('/assets/img/customimage/teeth/22.png');background-size:27px auto}
+.teeth-22.teeth-on,.teeth-22.teeth-up,.teeth-22:hover {background-image:url('/assets/img/customimage/teeth/22-o.png');}
+.teeth-23{width:29px;background-image:url('/assets/img/customimage/teeth/23.png');background-size:29px auto}
+.teeth-23.teeth-on,.teeth-23.teeth-up,.teeth-23:hover {background-image:url('/assets/img/customimage/teeth/23-o.png');}
+.teeth-24{width:35px;background-image:url('/assets/img/customimage/teeth/24.png');background-size:35px auto}
+.teeth-24.teeth-on,.teeth-24.teeth-up,.teeth-24:hover {background-image:url('/assets/img/customimage/teeth/24-o.png');}
+.teeth-25{width:35px;background-image:url('/assets/img/customimage/teeth/25.png');background-size:35px auto}
+.teeth-25.teeth-on,.teeth-25.teeth-up,.teeth-25:hover {background-image:url('/assets/img/customimage/teeth/25-o.png');}
+.teeth-26{width:42px;background-image:url('/assets/img/customimage/teeth/26.png');background-size:42px auto}
+.teeth-26.teeth-on,.teeth-26.teeth-up,.teeth-26:hover {background-image:url('/assets/img/customimage/teeth/26-o.png');}
+.teeth-27{width:46px;background-image:url('/assets/img/customimage/teeth/27.png');background-size:46px auto}
+.teeth-27.teeth-on,.teeth-27.teeth-up,.teeth-27:hover {background-image:url('/assets/img/customimage/teeth/27-o.png');}
+.teeth-28{width:52px;background-image:url('/assets/img/customimage/teeth/28.png');background-size:52px auto}
+.teeth-28.teeth-on,.teeth-28.teeth-up,.teeth-28:hover {background-image:url('/assets/img/customimage/teeth/28-o.png');}
+
+.teeth-48{width:52px;background-image:url('/assets/img/customimage/teeth/48.png');background-size:52px auto}
+.teeth-48.teeth-on,.teeth-48.teeth-dw,.teeth-48:hover {background-image:url('/assets/img/customimage/teeth/48-o.png');}
+.teeth-47{width:46px;background-image:url('/assets/img/customimage/teeth/47.png');background-size:46px auto}
+.teeth-47.teeth-on,.teeth-47.teeth-dw,.teeth-47:hover {background-image:url('/assets/img/customimage/teeth/47-o.png');}
+.teeth-46{width:42px;background-image:url('/assets/img/customimage/teeth/46.png');background-size:42px auto}
+.teeth-46.teeth-on,.teeth-46.teeth-dw,.teeth-46:hover {background-image:url('/assets/img/customimage/teeth/46-o.png');}
+.teeth-45{width:35px;background-image:url('/assets/img/customimage/teeth/45.png');background-size:35px auto}
+.teeth-45.teeth-on,.teeth-45.teeth-dw,.teeth-45:hover {background-image:url('/assets/img/customimage/teeth/45-o.png');}
+.teeth-44{width:35px;background-image:url('/assets/img/customimage/teeth/44.png');background-size:35px auto}
+.teeth-44.teeth-on,.teeth-44.teeth-dw,.teeth-44:hover {background-image:url('/assets/img/customimage/teeth/44-o.png');}
+.teeth-43{width:29px;background-image:url('/assets/img/customimage/teeth/43.png');background-size:29px auto}
+.teeth-43.teeth-on,.teeth-43.teeth-dw,.teeth-43:hover {background-image:url('/assets/img/customimage/teeth/43-o.png');}
+.teeth-42{width:24px;background-image:url('/assets/img/customimage/teeth/42.png');background-size:24px auto}
+.teeth-42.teeth-on,.teeth-42.teeth-dw,.teeth-42:hover {background-image:url('/assets/img/customimage/teeth/42-o.png');}
+.teeth-41{width:24px;background-image:url('/assets/img/customimage/teeth/41.png');background-size:24px auto}
+.teeth-41.teeth-on,.teeth-41.teeth-dw,.teeth-41:hover {background-image:url('/assets/img/customimage/teeth/41-o.png');}
+
+.teeth-31{width:24px;background-image:url('/assets/img/customimage/teeth/31.png');background-size:24px auto}
+.teeth-31.teeth-on,.teeth-31.teeth-dw,.teeth-31:hover {background-image:url('/assets/img/customimage/teeth/31-o.png');}
+.teeth-32{width:23px;background-image:url('/assets/img/customimage/teeth/32.png');background-size:23px auto}
+.teeth-32.teeth-on,.teeth-32teeth-dw,.teeth-32:hover {background-image:url('/assets/img/customimage/teeth/32-o.png');}
+.teeth-33{width:28px;background-image:url('/assets/img/customimage/teeth/33.png');background-size:28px auto}
+.teeth-33.teeth-on,.teeth-33.teeth-dw,.teeth-33:hover {background-image:url('/assets/img/customimage/teeth/33-o.png');}
+.teeth-34{width:34px;background-image:url('/assets/img/customimage/teeth/34.png');background-size:34px auto}
+.teeth-34.teeth-on,.teeth-34.teeth-dw,.teeth-34:hover  {background-image:url('/assets/img/customimage/teeth/34-o.png');}
+.teeth-35{width:34px;background-image:url('/assets/img/customimage/teeth/35.png');background-size:34px auto}
+.teeth-35.teeth-on,.teeth-35.teeth-dw,.teeth-35:hover {background-image:url('/assets/img/customimage/teeth/35-o.png');}
+.teeth-36{width:41px;background-image:url('/assets/img/customimage/teeth/36.png');background-size:41px auto}
+.teeth-36.teeth-on,.teeth-36.teeth-dw,.teeth-36:hover {background-image:url('/assets/img/customimage/teeth/36-o.png');}
+.teeth-37{width:46px;background-image:url('/assets/img/customimage/teeth/37.png');background-size:46px auto}
+.teeth-37.teeth-on,.teeth-37.teeth-dw,.teeth-37:hover {background-image:url('/assets/img/customimage/teeth/37-o.png');}
+.teeth-38{width:52px;background-image:url('/assets/img/customimage/teeth/38.png');background-size:52px auto}
+.teeth-38.teeth-on,.teeth-38.teeth-dw,.teeth-38:hover {background-image:url('/assets/img/customimage/teeth/38-o.png');}
+
+.teeth-55{width:34px;background-image:url('/assets/img/customimage/teeth/55.png');background-size:34px auto}
+.teeth-55.teeth-on,.teeth-55.teeth-up,.teeth-55:hover {background-image:url('/assets/img/customimage/teeth/55-o.png');}
+.teeth-54{width:35px;background-image:url('/assets/img/customimage/teeth/54.png');background-size:35px auto}
+.teeth-54.teeth-on,.teeth-54.teeth-up,.teeth-54:hover {background-image:url('/assets/img/customimage/teeth/54-o.png');}
+.teeth-53{width:28px;background-image:url('/assets/img/customimage/teeth/53.png');background-size:28px auto}
+.teeth-53.teeth-on,.teeth-53.teeth-up,.teeth-53:hover {background-image:url('/assets/img/customimage/teeth/53-o.png');}
+.teeth-52{width:27px;background-image:url('/assets/img/customimage/teeth/52.png');background-size:27px auto}
+.teeth-52.teeth-on,.teeth-52.teeth-up,.teeth-52:hover  {background-image:url('/assets/img/customimage/teeth/52-o.png');}
+.teeth-51{width:27px;background-image:url('/assets/img/customimage/teeth/51.png');background-size:27px auto}
+.teeth-51.teeth-on,.teeth-51.teeth-up,.teeth-51:hover {background-image:url('/assets/img/customimage/teeth/51-o.png');}
+
+.teeth-61{width:27px;background-image:url('/assets/img/customimage/teeth/61.png');background-size:27px auto}
+.teeth-61.teeth-on,.teeth-61.teeth-up,.teeth-61:hover {background-image:url('/assets/img/customimage/teeth/61-o.png');}
+.teeth-62{width:27px;background-image:url('/assets/img/customimage/teeth/62.png');background-size:27px auto}
+.teeth-62.teeth-on,.teeth-62.teeth-up,.teeth-62:hover {background-image:url('/assets/img/customimage/teeth/62-o.png');}
+.teeth-63{width:29px;background-image:url('/assets/img/customimage/teeth/63.png');background-size:29px auto}
+.teeth-63.teeth-on,.teeth-63.teeth-up,.teeth-63:hover {background-image:url('/assets/img/customimage/teeth/63-o.png');}
+.teeth-64{width:35px;background-image:url('/assets/img/customimage/teeth/64.png');background-size:35px auto}
+.teeth-64.teeth-on,.teeth-64.teeth-up,.teeth-64:hover {background-image:url('/assets/img/customimage/teeth/64-o.png');}
+.teeth-65{width:34px;background-image:url('/assets/img/customimage/teeth/65.png');background-size:34px auto}
+.teeth-65.teeth-on,.teeth-65.teeth-up,.teeth-65:hover {background-image:url('/assets/img/customimage/teeth/65-o.png');}
+
+.teeth-85{width:34px;background-image:url('/assets/img/customimage/teeth/85.png');background-size:34px auto}
+.teeth-85.teeth-on,.teeth-85.teeth-dw,.teeth-85:hover {background-image:url('/assets/img/customimage/teeth/85-o.png');}
+.teeth-84{width:35px;background-image:url('/assets/img/customimage/teeth/84.png');background-size:35px auto}
+.teeth-84.teeth-on,.teeth-84.teeth-dw,.teeth-84:hover {background-image:url('/assets/img/customimage/teeth/84-o.png');}
+.teeth-83{width:28px;background-image:url('/assets/img/customimage/teeth/83.png');background-size:28px auto}
+.teeth-83.teeth-on,.teeth-83.teeth-dw,.teeth-83:hover {background-image:url('/assets/img/customimage/teeth/83-o.png');}
+.teeth-82{width:24px;background-image:url('/assets/img/customimage/teeth/82.png');background-size:24px auto}
+.teeth-82.teeth-on,.teeth-82.teeth-dw,.teeth-82:hover {background-image:url('/assets/img/customimage/teeth/82-o.png');}
+.teeth-81{width:24px;background-image:url('/assets/img/customimage/teeth/81.png');background-size:24px auto}
+.teeth-81.teeth-on,.teeth-81.teeth-dw,.teeth-81:hover {background-image:url('/assets/img/customimage/teeth/81-o.png');}
+
+.teeth-71{width:24px;background-image:url('/assets/img/customimage/teeth/71.png');background-size:24px auto}
+.teeth-71.teeth-on,.teeth-71.teeth-dw,.teeth-71:hover {background-image:url('/assets/img/customimage/teeth/71-o.png');}
+.teeth-72{width:23px;background-image:url('/assets/img/customimage/teeth/72.png');background-size:23px auto}
+.teeth-72.teeth-on,.teeth-72teeth-dw,.teeth-72:hover {background-image:url('/assets/img/customimage/teeth/72-o.png');}
+.teeth-73{width:28px;background-image:url('/assets/img/customimage/teeth/73.png');background-size:28px auto}
+.teeth-73.teeth-on,.teeth-73.teeth-dw,.teeth-73:hover {background-image:url('/assets/img/customimage/teeth/73-o.png');}
+.teeth-74{width:35px;background-image:url('/assets/img/customimage/teeth/74.png');background-size:35px auto}
+.teeth-74.teeth-on,.teeth-74.teeth-dw,.teeth-74:hover  {background-image:url('/assets/img/customimage/teeth/74-o.png');}
+.teeth-75{width:35px;background-image:url('/assets/img/customimage/teeth/75.png');background-size:35px auto}
+.teeth-75.teeth-on,.teeth-75.teeth-dw,.teeth-75:hover {background-image:url('/assets/img/customimage/teeth/75-o.png');}
+
+.tooth-bx .tooth-bx-rgt {border-left:1px solid #000;display:flex;flex-direction:column;justify-content:center;padding-left:30px;height:100%;}
+.tooth-bx .tooth-bx-rgt .form-check{padding-bottom:20px}
+.tooth-bx .tooth-bx-rgt .form-check-input[type=checkbox]{padding:15px;border-radius:4px;border:1px solid #000;margin-right:10px}
+.tooth-bx .tooth-bx-rgt .form-check label{line-height:42px}
+.tooth-bx .tooth-bx-rgt .form-check:last-child{padding-bottom:0}
+
+.tret-lab-work .enclose-blk{background-color:#FAFAFA;padding:25px 10px 0;border-radius:2px;margin-bottom:40px}
+.tret-lab-work .brd{border:1px solid #000;padding:25px 10px 0;border-radius:4px;margin-bottom:40px}
+
+.tret-lab-work h4{color:#808080;font-size:20px;font-weight:400}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {opacity: 1;}
+
+.modal-dialog.tab-work{max-width:1200px;}
+.tret-lab-work label{color:#808080;font-size:16px;font-weight:400}
+
+.tab_content .emr label{margin-bottom:10px}
+
+.tab_content .emr .form-check-inline label{margin-bottom:0;color:#464E5F;font-weight:400;font-size:14px}
+.tab_content .emr .wisdom .form-check-inline {display:block}
+.form-check-input{border-color:#000}
+
+.tab_content .observation .observation-bx{border:1px solid #808080;border-radius:8px;margin-bottom:60px}
+.tab_content .observation .observation-bx .obsv-bx-top{padding:20px}
+.tab_content .observation .observation-bx p{margin-bottom:15px;font-size:16px;font-weight:500;color:#353F59}
+.tab_content .observation .observation-bx p span{padding-left:10px;color:#71798B;font-weight:400;}
+
+table.obv {font-family: arial, sans-serif;border-collapse: collapse;width: 100%;border-radius:6px;background:#fff;margin-bottom:40px}
+table.obv td, table.obv th {text-align: center;padding: 8px;font-size:15px;}
+table.obv th {background-color: #FAFAFA;font-weight:bold;}
+table.obv td .bx{padding: 10px;display: inline-block;vertical-align: bottom;margin-right: 5px;}
+table.obv td .bx.org{background-color: #FFB2B2;}
+table.obv td .bx.lav{background-color: #BDB2FF;}
+table.obv td label{line-height: 18px;}
+
+.tab_content .treatment {padding:20px}
+.tab_content .tabs.trt {text-align:center}
+.tab_content .tabs.trt li {padding:0 10px;display:inline-block;border:0}
+.tab_content .tabs.trt li a{width:auto;height:auto;border:0;padding:10px;border-radius:5px;position:relative;background-color:#F0F0F0 !important;text-align:center;color:#000;font-size:15px;line-height:18px;display:block}
+.tab_content .tabs.trt li a.active{background-color:#E4F1FF !important;}
+.tab_content .treatment .treatment-bx{margin:0 -20px 60px}
+.tab_content .treatment .treatment-bx .total-blk p{font-size:15px;color:#353F59;margin-bottom:0}
+.tab_content .treatment .treatment-bx .total-blk{background-color:#E4F1FF;padding:10px 100px}
+
+
+/* chief complaint */
+
+
+
+
+#chiefcomplaintModal .modal-dailog{
+  max-width:1200px;
+}
+
+#chiefcomplaintModal .modal-content{
+  padding: 30px !important;
+}
+
+
+/*Super Admin*/
+.super-admin-blk {padding:0 50px}
+.super-admin-blk .admin-bx{padding:15px;border-radius:17px;background-repeat:no-repeat;background-position:left 10px bottom 10px;position:relative;display:flex;align-items:center;box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.1);justify-content: center;min-height:114px}
+.super-admin-blk .admin-bx small{position:absolute;top:10px;left:10px;color:#FAFAFA;font-size:20px;font-weight:600}
+.super-admin-blk .admin-bx p{color:#fff;font-size:35px;font-weight:600;margin-bottom:0}
+.super-admin-blk .admin-bx.pink {background-color:#ED9CCF;background-image:url('/assets/img/customimage/ic-plus2.png')}
+.super-admin-blk .admin-bx.green {background-color:#A2E198;background-image:url('/assets/img/customimage/ic-user.png')}
+.super-admin-blk .admin-bx.blue {background-color:#99AFE5;background-image:url('/assets/img/customimage/ic-help.png')}
+.super-admin-blk .admin-bx.lav {background-color:#C397E4;background-image:url('/assets/img/customimage/ic-lead.png')}
+.super-admin-blk .admin-bx.lg-green {background-color:#AAE2E1}
+.super-admin-blk .admin-bx.lg-green  p{color:#3C3849;font-size:24px;line-height:38px;font-weight:500;padding:40px 0 25px 20px}
+.super-admin-blk .admin-bx .btn-create-cl{border-radius:10px;background:#1E2129;font-weight:20px;color:#FAFAFA;padding:6px 15px;margin-left:20px}
+
+
+.whitefont {color:white !important;}
+
+/*Super Admin*/
+
+
+@media (min-width: 576px) {
+  .card-columns {column-count: 1;}
+
+}
+
+@media (min-width: 768px) {
+  .card-columns {column-count: 2;}
+
+}
+
+@media (min-width: 992px) {
+  #mainNav .navbar-brand{width: 250px}
+  #mainNav .navbar-collapse{overflow: visible;max-height: none}
+  #mainNav .navbar-collapse .navbar-sidenav{position: absolute;top: 0;left: 0;overflow-x: hidden;overflow-y: auto;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;margin-top: 62px}
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item{width: 250px;padding: 0}
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item > .nav-link{padding: 1em;padding-left: 18px}
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level,#mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level{padding-left: 0;list-style: none}
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li,#mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li{width: 250px}
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a,#mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a{padding: 1em}
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a{padding-left: 2.75em}
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a{padding-left: 3.75em}
+  #mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link{min-width: 0}
+  #mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link:after{width: 24px;text-align: center}
+  #mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown .dropdown-menu > .dropdown-item > .dropdown-message{max-width: 300px}
+  #mainNav.fixed-top .navbar-sidenav{height: calc(100vh - 111px)}
+  #mainNav.fixed-top .sidenav-toggler{position: absolute;top: 0;left: 0;display: flex;overflow-x: hidden;overflow-y: auto;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;margin-top: calc(100vh - 49px)}
+  #mainNav.fixed-top .sidenav-toggler > .nav-item{width: 250px;padding: 0}
+  #mainNav.fixed-top .sidenav-toggler > .nav-item > .nav-link{padding: 1em}
+
+}
+
+
+
+/*Upload*/
+.tab_content .uploads{background-color:#fff;padding:20px 40px;box-shadow: 0px 0px 35px 0px rgba(181, 181, 195, 0.1);position:relative}
+.tab_content .uploads .uploads-bx{margin:0 -20px 60px}
+.tab_content .uploads .uploads-bx .clinical-file-bx {position:relative}
+.tab_content .uploads .uploads-bx .clinical-file-bx .item-desc{position:relative;background:#222222;padding:10px;width:100%}
+.tab_content .uploads .uploads-bx .clinical-file-bx .item-desc p{font-size:15px;font-weight:300;color:#fff;margin-bottom:0}
+.tab_content .uploads .uploads-bx .clinical-file-bx .item-desc p span{font-size:16px;display:block}
+.tab_content .uploads .uploads-bx .clinical-file-bx .item-desc .delete{position:absolute;right:10px;top:25px}
+
+.tab_content .uploads .btn-secondary.cancel{position:absolute;top:20px;right:25px}
+.modal-dialog.upload{max-width:725px;}
+.modal-dialog.upload .modal-content{padding:30px;border-radius:20px}
+#uploadModal .drag-bx{border:1px dashed #000;border-radius:10px;text-align:center;padding:20px 10px;position:relative}
+#uploadModal .drag-bx input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.modal-dialog.upload .modal-content .form-wrap{ margin-bottom:35px}
+.modal-dialog.upload .modal-content .input-group{padding:0}
+.modal-dialog.upload .modal-footer {border-top:0;justify-content: center;}
+.modal-dialog.upload .form-control, .modal-dialog.upload .form-select{background-color:transparent;border:1px solid #000;border-width:0 0 1px !important;border-radius:0 !important}
+.modal-dialog.upload .upload-form{padding-right:50px}
+.modal-dialog.upload .upload-form .input-group-text{background-color:transparent;border-radius:0;border:1px solid #000;border-width:0 0 1px 0}
+
+#uploadImgModal .modal-body{position:relative;z-index:1;padding:34px 15px 15px;}
+#uploadImgModal .modal-body .close{position:absolute;right:12px;top:6px;z-index:3}
+#uploadImgModal .modal-body figure {position:relative;z-index:2;margin-bottom:0}
+#uploadImgModal .modal-body figure img{width:100%}
+/*Upload*/
+
+@media (min-width: 1200px) {
+  .card-columns { column-count: 2;}
+
+}
+
+@media (max-width: 400px) {
+    .left {margin-top: 55px !important;}
+    .left:hover {width: 78%;}
+    .left:hover ul li.menu-heading{text-align: left !important;}
+   
+  }

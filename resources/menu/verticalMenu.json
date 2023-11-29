@@ -1,0 +1,554 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "type": "Admin",
+      "slug": "dashboard-analytics"
+    },
+    {
+      "url": "/calendar",
+      "name": "Calender",
+      "icon": "menu-icon tf-icons bx bx-calendar",
+      "type": "Admin",
+      "slug": "calender"
+    },
+    {
+      "url": "/appointment",
+      "name": "Patient",
+      "icon": "menu-icon tf-icons bx bx-calendar-edit",
+      "type": "Admin",
+      "slug": "Patients"
+    },
+    {
+      "name": "Doctor",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "type": "Admin",
+      "slug": "emr",
+      "submenu": [
+        {
+          "url": "/doctor",
+          "name": "Manage Doctor",
+          "slug": "emr-without-menu"
+        },
+        {
+          "url": "/examination",
+          "name": "Examination",
+          "slug": "layouts-without-navbar"
+        }
+      ]
+    },
+    {
+      "url": "/help",
+      "name": "Help",
+      "icon": "menu-icon tf-icons bx bx-calendar-edit",
+      "type": "Admin",
+      "slug": "Patients"
+    },
+    {
+      "name": "Accounting",
+      "icon": "menu-icon tf-icons bx bx-briefcase",
+      "type": "Admin",
+      "slug": "accounting",
+      "submenu": [
+        {
+          "url": "/billing",
+          "name": "Billing",
+          "slug": "layouts-without-menu"
+        },
+        {
+          "url": "/vendor_expenses",
+          "name": "Vendor Expenses",
+          "slug": "layouts-without-navbar"
+        },
+        {
+          "url": "/consultant_expenses",
+          "name": "Consultant Expenses",
+          "slug": "layouts-without-navbar"
+        },
+        {
+          "url": "/petty_cash",
+          "name": "Petty Cash",
+          "slug": "layouts-without-navbar"
+        },
+        {
+          "url": "/transactions",
+          "name": "Transactions",
+          "slug": "layouts-without-navbar"
+        }
+      ]
+    },{
+      "name": "Reports",
+      "icon": "menu-icon tf-icons bx bx-bar-chart-alt",
+      "type": "Admin",
+      "slug": "reports",
+      "submenu": [
+        {
+          "url": "/patient_report",
+          "name": "Patient Report",
+          "slug": "layouts-without-menu"
+        },
+        {
+          "url": "/daily_collection",
+          "name": "Daily Collection",
+          "slug": "layouts-without-navbar"
+        }
+      ]
+    },
+    {
+      "name": "Layouts",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "type": "Admin",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "url": "/layouts/without-menu",
+          "name": "Without menu",
+          "slug": "layouts-without-menu"
+        },
+        {
+          "url": "/layouts/without-navbar",
+          "name": "Without navbar",
+          "slug": "layouts-without-navbar"
+        },
+        {
+          "url": "/layouts/container",
+          "name": "Container",
+          "slug": "layouts-container"
+        },
+        {
+          "url": "/layouts/fluid",
+          "name": "Fluid",
+          "slug": "layouts-fluid"
+        },
+        {
+          "url": "/layouts/blank",
+          "name": "Blank",
+          "slug": "layouts-blank",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "menuHeader": "Pages"
+    },
+    {
+      "name": "Account Settings",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "type": "Admin",
+      "slug": "pages-account-settings",
+      "submenu": [
+        {
+          "url": "/pages/account-settings-account",
+          "name": "Account",
+          "slug": "pages-account-settings-account"
+        },
+        {
+          "url": "/pages/account-settings-notifications",
+          "name": "Notifications",
+          "slug": "pages-account-settings-notifications"
+        },
+        {
+          "url": "/pages/account-settings-connections",
+          "name": "Connections",
+          "slug": "pages-account-settings-connections"
+        }
+      ]
+    },
+    {
+      "name": "Authentications",
+      "icon": "menu-icon tf-icons bx bx-lock-open-alt",
+      "type": "Admin",
+      "slug": "auth",
+      "submenu": [
+        {
+          "url": "/auth/login-basic",
+          "name": "Login",
+          "slug": "auth-login-basic",
+          "target": "_blank"
+        },
+        {
+          "url": "/auth/register-basic",
+          "name": "Register",
+          "slug": "auth-register-basic",
+          "target": "_blank"
+        },
+        {
+          "url": "/auth/forgot-password-basic",
+          "name": "Forgot Password",
+          "slug": "auth-forgot-password-basic",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "name": "Misc",
+      "icon": "menu-icon tf-icons bx bx-cube-alt",
+      "type": "Admin",
+      "slug": "pages-misc",
+      "submenu": [
+        {
+          "url": "/pages/misc-error",
+          "name": "Error",
+          "slug": "pages-misc-error",
+          "target": "_blank"
+        },
+        {
+          "url": "/pages/misc-under-maintenance",
+          "name": "Under Maintenance",
+          "slug": "pages-misc-under-maintenance",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "menuHeader": "Components"
+    },
+    {
+      "name": "Cards",
+      "icon": "menu-icon tf-icons bx bx-collection",
+      "type": "Admin",
+      "slug": "cards-basic",
+      "url": "/cards/basic"
+    },
+    {
+      "name": "User interface",
+      "icon": "menu-icon tf-icons bx bx-box",
+      "type": "Admin",
+      "slug": "ui",
+      "submenu": [
+        {
+          "url": "ui/accordion",
+          "name": "Accordion",
+          "slug": "ui-accordion"
+        },
+        {
+          "url": "ui/alerts",
+          "name": "Alerts",
+          "slug": "ui-alerts"
+        },
+        {
+          "url": "ui/badges",
+          "name": "Badges",
+          "slug": "ui-badges"
+        },
+        {
+          "url": "ui/buttons",
+          "name": "Buttons",
+          "slug": "ui-buttons"
+        },
+        {
+          "url": "ui/carousel",
+          "name": "Carousel",
+          "slug": "ui-carousel"
+        },
+        {
+          "url": "ui/collapse",
+          "name": "Collapse",
+          "slug": "ui-collapse"
+        },
+        {
+          "url": "ui/dropdowns",
+          "name": "Dropdowns",
+          "slug": "ui-dropdowns"
+        },
+        {
+          "url": "ui/footer",
+          "name": "Footer",
+          "slug": "ui-footer"
+        },
+        {
+          "url": "ui/list-groups",
+          "name": "List groups",
+          "slug": "ui-list-groups"
+        },
+        {
+          "url": "ui/modals",
+          "name": "Modals",
+          "slug": "ui-modals"
+        },
+        {
+          "url": "ui/navbar",
+          "name": "Navbar",
+          "slug": "ui-navbar"
+        },
+        {
+          "url": "ui/offcanvas",
+          "name": "Offcanvas",
+          "slug": "ui-offcanvas"
+        },
+        {
+          "url": "ui/pagination-breadcrumbs",
+          "name": "Pagination & Breadcrumbs",
+          "slug": "ui-pagination-breadcrumbs"
+        },
+        {
+          "url": "ui/progress",
+          "name": "Progress",
+          "slug": "ui-progress"
+        },
+        {
+          "url": "ui/spinners",
+          "name": "Spinners",
+          "slug": "ui-spinners"
+        },
+        {
+          "url": "ui/tabs-pills",
+          "name": "Tabs & Pills",
+          "slug": "ui-tabs-pills"
+        },
+        {
+          "url": "ui/toasts",
+          "name": "Toasts",
+          "slug": "ui-toasts"
+        },
+        {
+          "url": "ui/tooltips-popovers",
+          "name": "Tooltips & popovers",
+          "slug": "ui-tooltips-popovers"
+        },
+        {
+          "url": "ui/typography",
+          "name": "Typography",
+          "slug": "ui-typography"
+        }
+      ]
+    },
+    {
+      "name": "Extended UI",
+      "icon": "menu-icon tf-icons bx bx-copy",
+      "type": "Admin",
+      "slug": "extended",
+      "submenu": [
+        {
+          "url": "extended/ui-perfect-scrollbar",
+          "name": "Perfect scrollbar",
+          "slug": "extended-ui-perfect-scrollbar"
+        },
+        {
+          "url": "extended/ui-text-divider",
+          "name": "Text Divider",
+          "slug": "extended-ui-text-divider"
+        }
+      ]
+    },
+    {
+      "url": "icons/boxicons",
+      "icon": "menu-icon tf-icons bx bx-crown",
+      "name": "Boxicons",
+      "type": "Admin",
+      "slug": "icons-boxicons"
+    },
+    {
+      "menuHeader": "Forms & Tables"
+    },
+    {
+      "name": "Form Elements",
+      "icon": "menu-icon tf-icons bx bx-detail",
+      "type": "Admin",
+      "slug": "forms",
+      "submenu": [
+        {
+          "url": "forms/basic-inputs",
+          "name": "Basic Inputs",
+          "slug": "forms-basic-inputs"
+        },
+        {
+          "url": "forms/input-groups",
+          "name": "Input groups",
+          "slug": "forms-input-groups"
+        }
+      ]
+    },
+    {
+      "name": "Form Layouts",
+      "icon": "menu-icon tf-icons bx bx-detail",
+      "type": "Admin",
+      "slug": "form-layouts",
+      "submenu": [
+        {
+          "url": "form/layouts-vertical",
+          "name": "Vertical Form",
+          "slug": "form-layouts-vertical"
+        },
+        {
+          "url": "form/layouts-horizontal",
+          "name": "Horizontal Form",
+          "slug": "form-layouts-horizontal"
+        }
+      ]
+    },
+    {
+      "url": "tables/basic",
+      "icon": "menu-icon tf-icons bx bx-table",
+      "type": "Admin",
+      "name": "Tables",
+      "slug": "tables-basic"
+    },
+    {
+      "menuHeader": "Misc"
+    },
+    {
+      "url": "https://themeselection.com/support/",
+      "icon": "menu-icon tf-icons bx bx-support",
+      "name": "Support",
+      "type": "Admin",
+      "slug": "support",
+      "target": "_blank"
+    },
+    {
+      "url": "https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/laravel-introduction.html",
+      "icon": "menu-icon tf-icons bx bx-file",
+      "name": "Documentation",
+      "type": "Admin",
+      "slug": "documentation",
+      "target": "_blank"
+    },
+    {
+      "url": "/",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "type": "User",
+      "slug": "dashboard-analytics"
+    },
+    {
+      "url": "/calendar",
+      "name": "Calender",
+      "icon": "menu-icon tf-icons bx bx-calendar",
+      "type": "User",
+      "slug": "calender"
+    },
+    {
+      "url": "/appointment",
+      "name": "Appointment",
+      "icon": "menu-icon tf-icons bx bx-calendar-edit",
+      "type": "User",
+      "slug": "appointments"
+    },
+    {
+      "name": "EMR",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "type": "User",
+      "slug": "emr",
+      "submenu": [
+        {
+          "url": "/patient_information",
+          "name": "Patient Information",
+          "slug": "emr-without-menu"
+        },
+        {
+          "url": "/examination",
+          "name": "Examination",
+          "slug": "layouts-without-navbar"
+        }
+      ]
+    },
+    {
+      "url": "/help",
+      "name": "Help",
+      "icon": "menu-icon tf-icons bx bx-calendar-edit",
+      "type": "User",
+      "slug": "helps"
+    },
+    {
+      "name": "Accounting",
+      "icon": "menu-icon tf-icons bx bx-briefcase",
+      "type": "User",
+      "slug": "accounting",
+      "submenu": [
+        {
+          "url": "/billing",
+          "name": "Billing",
+          "slug": "layouts-without-menu"
+        },
+        {
+          "url": "/vendor_expenses",
+          "name": "Vendor Expenses",
+          "slug": "layouts-without-navbar"
+        },
+        {
+          "url": "/consultant_expenses",
+          "name": "Consultant Expenses",
+          "slug": "layouts-without-navbar"
+        },
+        {
+          "url": "/petty_cash",
+          "name": "Petty Cash",
+          "slug": "layouts-without-navbar"
+        },
+        {
+          "url": "/transactions",
+          "name": "Transactions",
+          "slug": "layouts-without-navbar"
+        }
+      ]
+    },{
+      "name": "Reports",
+      "icon": "menu-icon tf-icons bx bx-bar-chart-alt",
+      "type": "User",
+      "slug": "reports",
+      "submenu": [
+        {
+          "url": "/patient_report",
+          "name": "Patient Report",
+          "slug": "layouts-without-menu"
+        },
+        {
+          "url": "/daily_collection",
+          "name": "Daily Collection",
+          "slug": "layouts-without-navbar"
+        }
+      ]
+    },
+    {
+      "url": "/superadmin-dashboard",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "type": "Super Admin",
+      "slug": "dashboard-analytics"
+    },
+    {
+      "url": "/clinics",
+      "name": "Clinics",
+      "icon": "menu-icon tf-icons bx bx-calendar",
+      "type": "Super Admin",
+      "slug": "clinics"
+    },
+    {
+      "url": "/user",
+      "name": "User",
+      "icon": "menu-icon tf-icons bx bx-calendar-edit",
+      "type": "Super Admin",
+      "slug": "user"
+    },
+    {
+      "url": "/notification",
+      "name": "Notifications",
+      "icon": "menu-icon tf-icons bx bx-calendar-edit",
+      "type": "Super Admin",
+      "slug": "notification"
+    },
+    {
+      "url": "/payments",
+      "name": "Payments",
+      "icon": "menu-icon tf-icons bx bx-calendar-edit",
+      "type": "Super Admin",
+      "slug": "payment"
+    },
+    {
+      "url": "/enquiry",
+      "name": "Enquiry",
+      "icon": "menu-icon tf-icons bx bx-calendar-edit",
+      "type": "Super Admin",
+      "slug": "enquiry"
+    },
+    {
+      "url": "/help",
+      "name": "Help",
+      "icon": "menu-icon tf-icons bx bx-calendar-edit",
+      "type": "Super Admin",
+      "slug": "help"
+    }
+    ]
+}
